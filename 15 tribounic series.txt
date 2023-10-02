@@ -1,0 +1,25 @@
+
+The first 20 Tribonacci numbers are: 
+0 1 1 2 4 7 13 24 44 81 149 274 504 927 1705 3136 5768 10609 19513 35890 
+
+---------------------------------------------------------------------
+
+#include <iostream>
+
+int main()
+{
+    long int i, a = 0, b = 1, c = 1, d;
+    std::cout << "\nThe first 20 Tribonacci numbers are: 0 1 1 ";
+
+    for (i = 0; i < 17; i++) 
+    {
+        d = a + b + c;
+        std::cout << d << " ";
+        a = b;
+        b = c;
+        c = d;
+    }
+
+    return 0;
+}
+

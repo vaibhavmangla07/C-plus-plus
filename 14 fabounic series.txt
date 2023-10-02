@@ -1,0 +1,25 @@
+
+The first 20 Fibonacci numbers are:
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 
+---------------------------------------------------------------------
+
+#include <iostream>
+
+int main()
+{
+    int i, a, b, c;
+    a = 0;
+    b = 1;
+    c = 0;
+    std::cout << "\nThe first 20 Fibonacci numbers are:";
+    
+    for (i = 1; i <= 20; i++)
+    {
+        std::cout << c << " ";
+        c = a + b;
+        b = a;
+        a = c;
+    }
+
+    return 0;
+}
