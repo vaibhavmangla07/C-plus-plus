@@ -1,0 +1,30 @@
+Enter a number: 6
+Square of 6 is 36
+Cube of 6 is 216
+Want to enter another number? (y/n) y
+Enter a number: 7
+Square of 7 is 49
+Cube of 7 is 343
+Want to enter another number? (y/n) n
+
+-----------------------------------------------
+
+
+#include <iostream>
+
+int main() {
+    char another = 'y';
+    int num;
+
+    while (another == 'y') 
+    {
+        std::cout << "Enter a number: ";
+        std::cin >> num;
+        std::cout << "Square of " << num << " is " << num * num << std::endl;
+        std::cout << "Cube of " << num << " is " << num * num * num << std::endl;
+        std::cout << "Want to enter another number? (y/n) ";
+        std::cin >> another;
+    }
+
+    return 0;
+}

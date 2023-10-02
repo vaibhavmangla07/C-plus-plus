@@ -1,0 +1,29 @@
+result
+let n =10
+Input Value of terms : 10
+The first 10 natural numbers are:
+1 2 3 4 5 6 7 8 9 10 
+The Sum of first 10 numbers are : 55 
+---------------------------------------------------
+
+#include <iostream>
+
+int main()
+{
+    int i = 1, n, s = 0;
+    
+    std::cout << "Input Value of terms: ";
+    std::cin >> n;
+    std::cout << "The first " << n << " natural numbers are:" << std::endl;
+    
+    while (i <= n)
+    {
+        std::cout << i << " ";
+        s += i;
+        i++;
+    }
+    
+    std::cout << "\nThe Sum of first " << n << " numbers is: " << s << std::endl;
+
+    return 0;
+}

@@ -1,0 +1,27 @@
+result
+Input the number 
+(Table to be calculated) : 7
+
+7 14 21 28 35 42 49 56 63 70
+--------------------------------------
+
+
+#include <iostream>
+
+int main()
+{
+    int j = 1, n, m;
+    std::cout << "Input the number" << std::endl;
+    std::cout << "(Table to be calculated): ";
+    std::cin >> n;
+    std::cout << std::endl;
+
+    while (j <= 10)
+    {
+        m = n * j;
+        j++;
+        std::cout << m << " ";
+    }
+
+    return 0;
+}

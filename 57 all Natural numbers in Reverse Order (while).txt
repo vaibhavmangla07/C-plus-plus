@@ -1,0 +1,22 @@
+result
+Natural number in reverse order 10 9 8 7 6 5 4 3 2 1 
+
+-------------------------------------------------------------
+
+#include <iostream>
+
+int main()
+{
+    int n = 10;
+
+    std::cout << "Natural numbers in reverse order ";
+    
+    while (n >= 1)
+    {
+        std::cout << n << " ";
+        n--;
+    }
+
+    return 0;
+}
+

@@ -1,0 +1,27 @@
+
+Enter a positive integer: 56
+Factors of 56 are: 1 2 4 7 8 14 28 56 
+
+-------------------------------------------
+
+#include <iostream>
+
+int main()
+{
+    int n, i = 1;
+
+    std::cout << "Enter a positive integer: ";
+    std::cin >> n;
+    std::cout << "Factors of " << n << " are: ";
+
+    while (i <= n)
+    {
+        if (n % i == 0)
+        {
+            std::cout << i << " ";
+        }
+        i++;
+    }
+
+    return 0;
+}

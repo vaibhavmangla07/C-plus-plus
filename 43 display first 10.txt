@@ -1,0 +1,21 @@
+result
+The first 10 natural numbers are:
+1 2 3 4 5 6 7 8 9 10 
+-------------------------------------
+
+#include <iostream>
+
+int main()
+{
+    int i = 1;
+    std::cout << "The first 10 natural numbers are:" << std::endl;
+    
+    while (i <= 10)
+    {
+        std::cout << i << " ";
+        i++;
+    }
+
+    return 0;
+}
+
